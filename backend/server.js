@@ -3,17 +3,17 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const bcrypt = require("bcrypt");
 const User = require("./models/User");
-require("dotenv")
+require("dotenv").config()
 
 const app = express();
 const PORT = 5000;
+const mongo_url = process.env.MONGODB_URI
 
 app.use(cors());
 app.use(express.json());
 
 // Connect to MongoDB
-mongoose.connect("mongodb+srv://Dharanish:kikiakka123@cluster0.np7jc.mongodb.net/?retryWrites=true&w=majority&appName=Clustere", {
-});
+mongoose.connect(mongo_url, {});
 
 // Signup route
 app.post("/api/signup", async (req, res) => {
