@@ -92,6 +92,8 @@ if (!validatePassword(formData.password)) {
               type="text"
               placeholder="Name"
               name="fullName"
+              pattern="[A-Za-z\s]+"
+              title="Only letters and spaces are allowed"
               value={formData.fullName}
               onChange={handleChange}
               required
@@ -102,6 +104,7 @@ if (!validatePassword(formData.password)) {
               type="tel"
               placeholder="Phone number"
               name="phone"
+              maxLength={10}
               value={formData.phone}
               onChange={handleChange}
               required
