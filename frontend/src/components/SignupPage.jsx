@@ -53,7 +53,7 @@ if (!validatePassword(formData.password)) {
 }
 
 
-    const mailboxlayerKey = "575216f737d05f88c2de31407436c902";
+    const mailboxlayerKey = process.env.VITE_API_KEY;
     const emailToValidate = formData.email;
     const validationURL = `https://apilayer.net/api/check?access_key=${mailboxlayerKey}&email=${emailToValidate}`;
 
