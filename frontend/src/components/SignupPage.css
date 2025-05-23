@@ -1,0 +1,147 @@
+/* root */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7fb;
+  }
+  
+  /* Center content vertically & horizontally */
+  .signup-page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Signup container */
+  .signup-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(243, 242, 242, 0.964);
+    padding: 30px 25px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    height: 97%;
+  }
+  
+  /* Heading */
+  .signup-container h2 {
+    font-size: 34px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: #222;
+    line-height: 0;
+  }
+  .signup-container h3 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #222;
+    line-height: 0.5;
+  }
+  /* Form layout */
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Labels */
+  .signup-form label {
+    font-size: 13px;
+    color: #6e44ff;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 4px;
+  }
+
+  
+  
+  /* Inputs */
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="tel"],
+.signup-form input[type="password"] {
+  padding: 10px;
+  background-color: transparent; 
+  border: 1px solid #dcdcdc;    
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  color: #000;
+}
+  
+  /* Radio buttons */
+  .radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .radio-group label {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  /* Button */
+  .primary-btn {
+    background-color: #6e44ff;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 135px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .primary-btn:hover {
+    background-color: #5a34d2;
+  }
+  
+  /* Additional text */
+  .signup-form p {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+  
+  /* Responsive (mobile) */
+  @media (max-width: 480px) {
+    .signup-container {
+      padding: 25px 20px;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  
+    .signup-container h2 {
+      font-size: 20px;
+    }
+  
+    .primary-btn {
+      font-size: 13px;
+      padding: 10px;
+    }
+  }
+
+  .red-star {
+    color: red;
+    margin-left: 2px;
+  }
+
+  

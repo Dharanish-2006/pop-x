@@ -1,0 +1,115 @@
+/* Landing container */
+.landing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Fit in one screen */
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+/* Card wrapper */
+.card {
+    background-color: rgb(243, 242, 242);
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    height: 100%; /* Let content define height */
+    max-height: 92vh; /* Prevent overflow */
+    overflow-y: auto; /* Scroll within card if needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Push all content to the bottom */
+}
+
+/* Heading */
+.card h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+    
+    
+}
+
+/* Paragraphs */
+.card p {
+    color: #7c7979;
+    font-size: 14px;
+    margin-bottom: 1px;
+    margin-top: 0%;
+    
+}
+
+/* Buttons wrapper */
+.card .buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px; /* Adjust the space between content and buttons */
+}
+
+/* Buttons */
+.primary-btn,
+.secondary-btn {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Primary button */
+.primary-btn {
+    background-color: #3b26f5;
+    color: white;
+    margin-top: auto;
+}
+
+/* Secondary button */
+.secondary-btn {
+    background-color: #d6b4f8;
+    color: #05000d;
+    font-weight: bold;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    .card h2 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 13px;
+        
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+/* Add this new class */
+.card-content {
+    margin-bottom: -100px; /* Adjust this value for more or less spacing */
+}
+
+/* Headings and paragraphs styles (optional updates) */
+.card-content h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.card-content p {
+    color: #7c7979;
+    font-size: 14px;
+    
+}
+  
