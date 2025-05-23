@@ -62,7 +62,7 @@ if (!validatePassword(formData.password)) {
       const data = response.data;
 
       if (data.format_valid && data.mx_found && data.smtp_check) {
-        await axios.post("http://localhost:5000/api/signup", formData);
+        await axios.post("https://pop-x-1.onrender.com/api/signup", formData);
         localStorage.setItem("user", JSON.stringify(formData));
         navigate("/account", {
           state: {
